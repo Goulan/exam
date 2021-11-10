@@ -21,7 +21,7 @@
 					</button>
 					<a class="navbar-brand" href="#">某管理系统</a>
 				</div>
-				<div>
+				<div id="navbar" class="navbar-collapse collapse">
 					<ul class="nav navbar-nav">
 						<li class="active"><a href="#">首页 <span class="sr-only">(current)</span></a></li>
 						<li class="dropdown">
@@ -38,17 +38,16 @@
 							</ul>
 						</li>
 						<li><a href="#">帮助</a></li>
-				</div>
-				<div id="navbar" class="navbar-collapse collapse">
-					<ul class="nav navbar-nav navbar-right">
 					</ul>
-					<div>
-						<form class="navbar-form navbar-right">
-							<input type="text" class="form-control" placeholder="用户名...">
-							<input type="text" class="form-control" placeholder="密码...">
-							<button class="btn btn-default" type="submit">登录</button>
-						</form>
-					</div>
+					<ul class="nav navbar-nav navbar-right">
+						<div>
+							<form class="navbar-form navbar-right">
+								<input type="text" class="form-control" placeholder="用户名...">
+								<input type="text" class="form-control" placeholder="密码...">
+								<button class="btn btn-default" type="submit">登录</button>
+							</form>
+						</div>
+					</ul>
 				</div>
 			</div>
 		</nav>
@@ -70,49 +69,47 @@
 				</div>
 				<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
 					<h1 class="sub-header panel">管理控制台</h1>
-					<button type="button" class="btn btn-default">操作1</button>
-					<button type="button" class="btn btn-primary">操作2</button>
-					<button type="button" class="btn btn-success">操作3</button>
-					<button type="button" class="btn btn-info">操作4</button>
-					<button type="button" class="btn btn-warning">操作5</button>
-					<button type="button" class="btn btn-danger">操作6</button>
-					<p></p>
-					<div class="row">
+					<p>
+						<button type="button" class="btn btn-default btn-lg">操作1</button>
+						<button type="button" class="btn btn-primary btn-lg">操作2</button>
+						<button type="button" class="btn btn-success btn-lg">操作3</button>
+						<button type="button" class="btn btn-info btn-lg">操作4</button>
+						<button type="button" class="btn btn-warning btn-lg">操作5</button>
+						<button type="button" class="btn btn-danger btn-lg">操作6</button>
+					</p>
+					<div class="row placeholder">
 						<div class="col-xs-12 col-sm-6">
-							<div class="panel panel-primary">
+							<div class="panel panel-primary ">
 								<div class="panel-heading">最新提醒</div>
 								<div class="panel-body">
-									<div class="alert alert-success" role="alert"><strong>提示</strong> 您的订单（2014001）已经审批通过！</div>
-									<div class="alert alert-danger" role="alert"><strong>提示</strong> 您的订单（2014002）被打回！</div>
-									<div class="alert alert-warning" role="alert"><strong>提示</strong> 您的订单（2013001）客户付款延迟！</div>
+									<div class="alert alert-success" role="alert">提示 您的订单 (2014001) 已经审批通过!</div>
+									<div class="alert alert-danger" role="alert">提示 您的订单 (2014002) 被打回!</div>
+									<div class="alert alert-warning" role="alert">提示 您的订单 (2014003) 客户付款延迟!</div>
 								</div>
 							</div>
 						</div>
 						<div class="col-xs-12 col-sm-6">
-							<div class="panel panel-primary">
+							<div class="panel panel-primary ">
 								<div class="panel-heading">我的任务</div>
 								<div class="panel-body">
-									<ul class="nav nav-pills nav-stacked" role="tablist">
-										<li role="presentation" class="bg-info">
-											<a href="#" class="alert-link">订单批阅<span class="badge pull-right">42</span></a>
-										</li>
-										<p></p>
-										<li role="presentation" class="bg-info">
-											<a href="#" class="alert-link">收款确认<span class="badge pull-right">20</span></a>
-										</li>
-										<p></p>
-										<li role="presentation" class="bg-info">
-											<a href="#" class="alert-link">付款确认<span class="badge pull-right">10</span></a>
-										</li>
-										<p></p>
+									<ul class="nav nav-pills nav-stacked">
+										<p>
+											<li role="presentation" class="alert-info"><a href="#"><span class="badge pull-right">42</span>首页</a></li>
+										</p>
+										<p>
+											<li role="presentation" class="alert-info"><a href="#"><span class="badge pull-right">20</span>收款确认</a></li>
+										</p>
+										<p>
+											<li role="presentation" class="alert-info"><a href="#"><span class="badge pull-right">10</span>付款确认</a></li>
+										</p>
 									</ul>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="row">
-						<div class="col-xs-12 col-sm-6 ">
-							<div class="panel panel-primary">
+					<div class="row placeholder">
+						<div class="col-xs-12 col-sm-6">
+							<div class="panel panel-primary ">
 								<div class="panel-heading">最新订单</div>
 								<div class="panel-body">
 									<table class="table table-striped">
@@ -125,33 +122,35 @@
 												<th>业务员</th>
 											</tr>
 										</thead>
-										<tr>
-											<td>1</td>
-											<td>Apple Macbook air</td>
-											<td>10</td>
-											<td>80000</td>
-											<td>王小贱</td>
-										</tr>
-										<tr>
-											<td>2</td>
-											<td>Apple iPad air</td>
-											<td>20</td>
-											<td>65000</td>
-											<td>尹开花</td>
-										</tr>
-										<tr>
-											<td>3</td>
-											<td>Apple Macbook pro</td>
-											<td>5</td>
-											<td>50000</td>
-											<td>刘老根</td>
-										</tr>
+										<tbody>
+											<tr>
+												<td>1</td>
+												<td>Apple Macbook air</td>
+												<td>10</td>
+												<td>80000</td>
+												<td>王小贱</td>
+											</tr>
+											<tr>
+												<td>2</td>
+												<td>Apple iPad air</td>
+												<td>20</td>
+												<td>65000</td>
+												<td>尹开花</td>
+											</tr>
+											<tr>
+												<td>3</td>
+												<td>Apple Macbook pro</td>
+												<td>5</td>
+												<td>50000</td>
+												<td>刘老根</td>
+											</tr>
+										</tbody>
 									</table>
 									<button type="button" class="btn btn-primary">查看详细&nbsp;&raquo; </button>
 								</div>
 							</div>
 						</div>
-						<div class="col-xs-12 col-sm-6 ">
+						<div class="col-xs-12 col-sm-6">
 							<div class="panel panel-primary">
 								<div class="panel-heading">工程进度</div>
 								<div class="panel-body">
@@ -172,11 +171,7 @@
 								</div>
 							</div>
 						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<script src="js/jquery.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
+						<script src="js/jquery.min.js"></script>
+						<script src="js/bootstrap.min.js"></script>
 	</body>
 </html>
